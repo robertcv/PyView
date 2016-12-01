@@ -1,8 +1,8 @@
-
 def Linear(criterion_data, reversed=False, min_v=None, max_v=None):
     result = []
-    d_max = max(criterion_data)
-    d_min = min(criterion_data)
+
+    d_min = min_v if min_v is not None else min(criterion_data)
+    d_max = max_v if max_v is not None else max(criterion_data)
 
     k = 100/(d_max-d_min)
 

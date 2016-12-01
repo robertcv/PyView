@@ -1,8 +1,10 @@
-
 def printList(list):
     s = ''
     for item in list:
-        s += str(item) + ', '
+        if type(item) == float:
+            s += "{0:.2f}, ".format(item)
+        else:
+            s += str(item) + ', '
     print(s[:-2])
 
 def printTable(variants, criteria, data):
@@ -49,3 +51,4 @@ def printTable(variants, criteria, data):
         s += '\n'
 
     print(s)
+
