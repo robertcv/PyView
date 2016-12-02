@@ -1,2 +1,2 @@
 # PyView
-Decision system module fo python
+Decision system module for python
